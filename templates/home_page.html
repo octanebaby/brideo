@@ -1,0 +1,10 @@
+{% extends "template.html" %}
+{% block body %}
+<ul>
+    {% for event in events %}
+    <li>Upcoming event {{event.happens_on}}: <a href="{{url_for("view", id=event.id)}}">{{event.title}}</a></li>
+    {% else %}
+    <li>No events coming up! How sad!</li>
+    {% endfor %}
+</ul>
+{% endblock %}
