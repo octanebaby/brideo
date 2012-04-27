@@ -5,8 +5,12 @@ from sqlalchemy import Column, String, Integer, Text, DateTime
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy import create_engine
 from sqlalchemy import ForeignKey
+import os
 
 Base = declarative_base()
+
+PROD_DB = "mysql://host..."
+DEV_DB = "sqlite:///brideo.db"
 
 db = None
 
@@ -60,7 +64,11 @@ def fetch_user_by_email(email):
 """
 
 def connect():
-    engine = create_engine("sqlite:////tmp/brideo.db")
+    if os.environ.get("BRIDEO_ENV") == "prod":
+        db_url = PROD_DB
+    else:
+        db_url = DEV_DB
+    engine = create_engine(db_url)
     Session = sessionmaker(bind=engine)
 
     global db
