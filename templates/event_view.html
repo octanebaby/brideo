@@ -3,6 +3,22 @@
 <div id = "event">
   <h2>{{event.title}} ({{event.happens_on.strftime('%Y-%m-%d at %H-%m') }})</h2>
   <p>{{event.message}} - {{event.user.name}}</p>
-  <div id= "video">VIDEO GOES HERE</div>
+  <div id= "video">{{embed_code|safe}}</div>
+  <a href="{{url_for("edit", id=event.id)}}">Edit this event</a>
 </div>
+{% endblock %}
+
+{% block customjs %}
+<script type="text/javascript">
+$(function() {
+//alert("this works");
+/*$.get("http://api.justin.tv/api/channel/embed/justin?volume=50", 
+    function(data){
+        alert("works!" + data);
+    });
+
+
+});
+*/
+</script>
 {% endblock %}
