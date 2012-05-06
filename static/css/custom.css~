@@ -1,0 +1,58 @@
+body{
+  padding-top: 60px;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat; 
+}
+
+body#homepage{
+  padding-top: 60px;
+  background-image: url("../brideo.jpeg");
+  background-size: 100% 100%; 
+  background-repeat: no-repeat; 
+}
+
+div#main-events{
+  border: 2px solid #666;
+  background-color: #f6f6f6;
+  padding: 14px;
+}
+
+div#main-events h1{
+  position: relative;
+  margin: 0px auto 21px auto;
+  width: 280px;
+  text-align: center;
+}
+
+div#event-info{
+  background-color: #f6f6f6;
+}
+div#event-info h2{
+  margin: 0px auto 0 px auto;
+  width: 280px;
+  text-align: center;
+  color: #666;
+}
+div#event-info p{
+  margin: 0px auto 21 px auto;
+  width: 280px;
+  text-align:center;
+  font-size: 21px;
+}
+
+div#event{
+}
+
+div#event h2{
+  margin: 0px auto 0 px auto;
+  width: 280px;
+  text-align: center;
+  color: #666;
+}
+div#event p{
+  margin: 0px auto 21 px auto;
+  width: 600px;
+  font-style: italic;
+  text-align:center;
+  font-size: 21px;
+}

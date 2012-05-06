@@ -1,0 +1,62 @@
+body { 
+    font-family: sans-serif;
+}
+h1 { 
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    border-bottom: 20px; 
+    font-size:50px; 
+    color:white;
+    text-align: right;
+}
+h2 { 
+    font-family: 'Georgia'; serif;
+    font-size:20px;
+}
+a {
+    color: #377BA8;
+}
+.event { 
+    margin: 2em auto; 
+    width: 70em; 
+    height: 65ex;
+    border: 3px solid #ccc;
+    padding: 1em; 
+    background: white; 
+    position:relative;
+}
+#message{
+   position:absolute;
+   left: 20px;
+   font-style: italic;
+}
+#video {
+   position:absolute;
+   left: 30px;
+   top: 120px;
+   width: 600px;
+   height: 400px;
+   border: 3px solid #ccc;
+}	
+#bg {
+    position:fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+}
+#bg img {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    min-width:50%;
+    min-height:50%;
+}
+.wrapper {
+  position: relative;
+  border: 
+}}
+

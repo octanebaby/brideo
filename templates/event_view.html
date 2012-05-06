@@ -1,6 +1,8 @@
 {% extends "template.html" %}
 {% block body %}
-<h2>{{event.title}} - {{event.happens_on}}</h2>
-<div>{{event.message}}</div>
-<div>VIDEO GOES HERE</div>
+<div id = "event">
+  <h2>{{event.title}} ({{event.happens_on.strftime('%Y-%m-%d at %H-%m') }})</h2>
+  <p>{{event.message}} - {{event.user.name}}</p>
+  <div id= "video">VIDEO GOES HERE</div>
+</div>
 {% endblock %}
